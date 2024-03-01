@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0rc1 on win32)" generated="20240301 20:02:11.171" rpa="false" schemaversion="4">
+<suite id="s1" name="NSL" source="C:\Users\mauricio.monteiro\Downloads\AUT-SQUAD-CRED-20240301T195354Z-001\AUT-SQUAD-CRED\Integracao\tests\NSL.robot">
+<test id="s1-t1" name="CT (Positivo) Validar criação de conta de usuário" line="5">
+<kw name="Dado que acesso a URL do site" library="basePage">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240301 20:02:11.413" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com'.</msg>
+<status status="PASS" starttime="20240301 20:02:11.413" endtime="20240301 20:02:15.577"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240301 20:02:15.577" endtime="20240301 20:02:15.711"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240301 20:02:20.711" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240301 20:02:15.711" endtime="20240301 20:02:20.711"/>
+</kw>
+<status status="PASS" starttime="20240301 20:02:11.413" endtime="20240301 20:02:20.711"/>
+</kw>
+<kw name="Quando clico em signup" library="basePage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN_SIGNUP}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240301 20:02:20.711" level="INFO">Clicking element '//a[contains(.,'Sign up')]'.</msg>
+<status status="PASS" starttime="20240301 20:02:20.711" endtime="20240301 20:02:20.771"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240301 20:02:25.772" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240301 20:02:20.772" endtime="20240301 20:02:25.772"/>
+</kw>
+<status status="PASS" starttime="20240301 20:02:20.711" endtime="20240301 20:02:25.772"/>
+</kw>
+<kw name="E informo username e password" library="basePage">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240301 20:02:25.774" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20240301 20:02:25.774" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20240301 20:02:25.774" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20240301 20:02:25.772" endtime="20240301 20:02:25.775"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${IPT_USERNAME}</arg>
+<arg>mau-monteiro27</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240301 20:02:25.775" level="INFO">Typing text 'mau-monteiro27' into text field '//input[@id='sign-username']'.</msg>
+<status status="PASS" starttime="20240301 20:02:25.775" endtime="20240301 20:02:25.917"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240301 20:02:28.917" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240301 20:02:25.917" endtime="20240301 20:02:28.917"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${IPT_SENHA}</arg>
+<arg>Teste@123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240301 20:02:28.917" level="INFO">Typing text 'Teste@123' into text field '//input[@id='sign-password']'.</msg>
+<status status="PASS" starttime="20240301 20:02:28.917" endtime="20240301 20:02:28.985"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240301 20:02:31.985" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240301 20:02:28.985" endtime="20240301 20:02:31.985"/>
+</kw>
+<status status="PASS" starttime="20240301 20:02:25.772" endtime="20240301 20:02:31.985"/>
+</kw>
+<kw name="Quando clico no botão signup" library="basePage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN_SIGNUP_CAD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240301 20:02:31.985" level="INFO">Clicking element '//button[contains(.,'Sign up')]'.</msg>
+<status status="PASS" starttime="20240301 20:02:31.985" endtime="20240301 20:02:32.033"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240301 20:02:37.033" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240301 20:02:32.033" endtime="20240301 20:02:37.033"/>
+</kw>
+<status status="PASS" starttime="20240301 20:02:31.985" endtime="20240301 20:02:37.033"/>
+</kw>
+<kw name="Então valido mensagem de cadastro com sucesso" library="basePage">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Evidencia_CT_Positivo_Validar_criação_de_conta_de_usuário.PNG</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240301 20:02:37.205" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240301 20:02:37.205" level="FAIL">UnexpectedAlertPresentException: Alert Text: This user already exist.
+Message: unexpected alert open: {Alert text : This user already exist.}
+  (Session info: chrome=122.0.6261.94)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74164AD22+56930]
+	(No symbol) [0x00007FF7415BF622]
+	(No symbol) [0x00007FF7414742E5]
+	(No symbol) [0x00007FF7414F8944]
+	(No symbol) [0x00007FF7414DBA43]
+	(No symbol) [0x00007FF7414AD438]
+	(No symbol) [0x00007FF7414AE4D1]
+	GetHandleVerifier [0x00007FF7419C6AAD+3709933]
+	GetHandleVerifier [0x00007FF741A1FFED+4075821]
+	GetHandleVerifier [0x00007FF741A1817F+4043455]
+	GetHandleVerifier [0x00007FF7416E9756+706710]
+	(No symbol) [0x00007FF7415CB8FF]
+	(No symbol) [0x00007FF7415C6AE4]
+	(No symbol) [0x00007FF7415C6C3C]
+	(No symbol) [0x00007FF7415B68F4]
+	BaseThreadInitThunk [0x00007FF9FFF17344+20]
+	RtlUserThreadStart [0x00007FFA003E26B1+33]
+</msg>
+<status status="FAIL" starttime="20240301 20:02:37.035" endtime="20240301 20:02:37.262"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20240301 20:02:37.262" endtime="20240301 20:02:37.262"/>
+</kw>
+<status status="FAIL" starttime="20240301 20:02:37.034" endtime="20240301 20:02:37.262"/>
+</kw>
+<status status="FAIL" starttime="20240301 20:02:11.413" endtime="20240301 20:02:37.262">UnexpectedAlertPresentException: Alert Text: This user already exist.
+Message: unexpected alert open: {Alert text : This user already exist.}
+  (Session info: chrome=122.0.6261.94)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74164AD22+56930]
+	(No symbol) [0x00007FF7415BF622]
+	(No symbol) [0x00007FF7414742E5]
+	(No symbol) [0x00007FF7414F8944]
+	(No symbol) [0x00007FF7414DBA43]
+	(No symbol) [0x00007FF7414AD438]
+	(No symbol) [0x00007FF7414AE4D1]
+	GetHandleVerifier [0x00007FF7419C6AAD+3709933]
+	GetHandleVerifier [0x00007FF741A1FFED+4075821]
+	GetHandleVerifier [0x00007FF741A1817F+4043455]
+	GetHandleVerifier [0x00007FF7416E9756+706710]
+	(No symbol) [0x00007FF7415CB8FF]
+	(No symbol) [0x00007FF7415C6AE4]
+	(No symbol) [0x00007FF7415C6C3C]
+	(No symbol) [0x00007FF7415B68F4]
+	BaseThreadInitThunk [0x00007FF9FFF17344+20]
+	RtlUserThreadStart [0x00007FFA003E26B1+33]
+</status>
+</test>
+<test id="s1-t2" name="CT (Negativo) Validar criação de conta para usuário já existente" line="12">
+<kw name="Dado que acesso a URL do site" library="basePage">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240301 20:02:37.278" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com'.</msg>
+<status status="PASS" starttime="20240301 20:02:37.277" endtime="20240301 20:02:39.738"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240301 20:02:39.738" endtime="20240301 20:02:39.860"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240301 20:02:44.862" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240301 20:02:39.860" endtime="20240301 20:02:44.862"/>
+</kw>
+<status status="PASS" starttime="20240301 20:02:37.277" endtime="20240301 20:02:44.862"/>
+</kw>
+<kw name="Quando clico em signup" library="basePage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN_SIGNUP}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240301 20:02:44.863" level="INFO">Clicking element '//a[contains(.,'Sign up')]'.</msg>
+<status status="PASS" starttime="20240301 20:02:44.863" endtime="20240301 20:02:44.919"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240301 20:02:49.920" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240301 20:02:44.919" endtime="20240301 20:02:49.920"/>
+</kw>
+<status status="PASS" starttime="20240301 20:02:44.862" endtime="20240301 20:02:49.920"/>
+</kw>
+<kw name="E informo novo username e password" library="basePage">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240301 20:02:49.920" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20240301 20:02:49.920" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20240301 20:02:49.920" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20240301 20:02:49.920" endtime="20240301 20:02:49.929"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${IPT_USERNAME}</arg>
+<arg>mau-monteiro27</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240301 20:02:49.930" level="INFO">Typing text 'mau-monteiro27' into text field '//input[@id='sign-username']'.</msg>
+<status status="PASS" starttime="20240301 20:02:49.929" endtime="20240301 20:02:50.054"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240301 20:02:53.056" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240301 20:02:50.054" endtime="20240301 20:02:53.056"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${IPT_SENHA}</arg>
+<arg>Teste@123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240301 20:02:53.056" level="INFO">Typing text 'Teste@123' into text field '//input[@id='sign-password']'.</msg>
+<status status="PASS" starttime="20240301 20:02:53.056" endtime="20240301 20:02:53.134"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240301 20:02:56.135" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240301 20:02:53.134" endtime="20240301 20:02:56.135"/>
+</kw>
+<status status="PASS" starttime="20240301 20:02:49.920" endtime="20240301 20:02:56.135"/>
+</kw>
+<kw name="Quando clico no botão signup" library="basePage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN_SIGNUP_CAD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240301 20:02:56.135" level="INFO">Clicking element '//button[contains(.,'Sign up')]'.</msg>
+<status status="PASS" starttime="20240301 20:02:56.135" endtime="20240301 20:02:56.188"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240301 20:03:01.189" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240301 20:02:56.188" endtime="20240301 20:03:01.189"/>
+</kw>
+<status status="PASS" starttime="20240301 20:02:56.135" endtime="20240301 20:03:01.189"/>
+</kw>
+<kw name="Então valido mensagem de usuário já existente" library="basePage">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Evidencia_CT_Negativo_Validar_criação_de_conta_para_usuário_já_existente.PNG</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240301 20:03:01.345" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240301 20:03:01.345" level="FAIL">UnexpectedAlertPresentException: Alert Text: This user already exist.
+Message: unexpected alert open: {Alert text : This user already exist.}
+  (Session info: chrome=122.0.6261.94)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74164AD22+56930]
+	(No symbol) [0x00007FF7415BF622]
+	(No symbol) [0x00007FF7414742E5]
+	(No symbol) [0x00007FF7414F8944]
+	(No symbol) [0x00007FF7414DBA43]
+	(No symbol) [0x00007FF7414AD438]
+	(No symbol) [0x00007FF7414AE4D1]
+	GetHandleVerifier [0x00007FF7419C6AAD+3709933]
+	GetHandleVerifier [0x00007FF741A1FFED+4075821]
+	GetHandleVerifier [0x00007FF741A1817F+4043455]
+	GetHandleVerifier [0x00007FF7416E9756+706710]
+	(No symbol) [0x00007FF7415CB8FF]
+	(No symbol) [0x00007FF7415C6AE4]
+	(No symbol) [0x00007FF7415C6C3C]
+	(No symbol) [0x00007FF7415B68F4]
+	BaseThreadInitThunk [0x00007FF9FFF17344+20]
+	RtlUserThreadStart [0x00007FFA003E26B1+33]
+</msg>
+<status status="FAIL" starttime="20240301 20:03:01.189" endtime="20240301 20:03:01.346"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20240301 20:03:01.346" endtime="20240301 20:03:01.346"/>
+</kw>
+<status status="FAIL" starttime="20240301 20:03:01.189" endtime="20240301 20:03:01.346"/>
+</kw>
+<status status="FAIL" starttime="20240301 20:02:37.277" endtime="20240301 20:03:01.346">UnexpectedAlertPresentException: Alert Text: This user already exist.
+Message: unexpected alert open: {Alert text : This user already exist.}
+  (Session info: chrome=122.0.6261.94)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74164AD22+56930]
+	(No symbol) [0x00007FF7415BF622]
+	(No symbol) [0x00007FF7414742E5]
+	(No symbol) [0x00007FF7414F8944]
+	(No symbol) [0x00007FF7414DBA43]
+	(No symbol) [0x00007FF7414AD438]
+	(No symbol) [0x00007FF7414AE4D1]
+	GetHandleVerifier [0x00007FF7419C6AAD+3709933]
+	GetHandleVerifier [0x00007FF741A1FFED+4075821]
+	GetHandleVerifier [0x00007FF741A1817F+4043455]
+	GetHandleVerifier [0x00007FF7416E9756+706710]
+	(No symbol) [0x00007FF7415CB8FF]
+	(No symbol) [0x00007FF7415C6AE4]
+	(No symbol) [0x00007FF7415C6C3C]
+	(No symbol) [0x00007FF7415B68F4]
+	BaseThreadInitThunk [0x00007FF9FFF17344+20]
+	RtlUserThreadStart [0x00007FFA003E26B1+33]
+</status>
+</test>
+<status status="FAIL" starttime="20240301 20:02:11.171" endtime="20240301 20:03:01.346"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="NSL">NSL</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
