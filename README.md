@@ -2,10 +2,10 @@
 
 Configuração do projeto
 A instalação do framework e suas bibliotecas auxiliares é feita através do pip, gerenciador de bibliotecas nativo do Python. Proceda com o comando abaixo:
-$ pip install robotframework
+pip install robotframework
 
 E verifique se a instalação ocorreu corretamente:
-$ robot --version
+robot --version
 
 A seguir, proceda com a instalação das bibliotecas abaixo:
 pip install robotframework==6.1.1
