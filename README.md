@@ -1,7 +1,7 @@
 # TECHNOBANK
 
 Configuração do projeto
-A instalação do framework e suas bibliotecas auxiliares é feita através do pip, gerenciador de bibliotecas nativo do Python. Proceda com o comando abaixo:<br>
+** A instalação do framework e suas bibliotecas auxiliares é feita através do pip, gerenciador de bibliotecas nativo do Python. Proceda com o comando abaixo: **<br>
 pip install robotframework
 
 E verifique se a instalação ocorreu corretamente:
