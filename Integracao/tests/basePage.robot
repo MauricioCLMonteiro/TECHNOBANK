@@ -3,7 +3,6 @@ Library     SeleniumLibrary
 
 *** Variables ***
 ${url}          https://www.demoblaze.com
-
 #Buttons
 ${BTN_CONTINUAR}     //span[contains(.,'Continuar')]
 ${BTN_SIGNUP}    //a[contains(.,'Sign up')]
@@ -15,7 +14,6 @@ ${BTN_ADD_PLACE_ORDER}   //button[contains(.,'Place Order')]
 ${BTN_ADD_PURCHASE}   //button[contains(.,'Purchase')]
 ${BTN_OK}   //button[contains(.,'OK')]
 ${BTN_DELETE}   (//a[@href='#'][contains(.,'Delete')])[2]
-
 #label
 ${LBL_MSG_SUCESSO}     //label[@for='Sign up successful.']
 ${LBL_MSG_COMPRA_COM_SUCESSO}   //h2[contains(.,'Thank you for your purchase!')]
@@ -33,7 +31,6 @@ ${LBL_PRODUTO_MONITOR}    //td[contains(.,'Apple monitor 24')]
 ${LBL_PRODUTO_APPLE_MONITOR_24}  (//a[contains(.,'Delete')])[1]
 ${LBL_PRODUTO_SANSUNG_GALAXY_S6}  (//a[contains(.,'Delete')])[2]
 ${LBL_PRODUTO_SONY_VAIO_i5}  (//a[contains(.,'Delete')])[3]   
-
 #text
 ${IPT_USERNAME}     //input[@id='sign-username']
 ${IPT_LOGIN}     //input[@id='loginusername']
