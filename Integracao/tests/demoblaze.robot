@@ -12,25 +12,34 @@ CT (Positivo) Validar criação de conta de usuário
 CT (Negativo) Validar criação de conta para usuário já existente
     Dado que acesso a URL do site
     Quando clico em signup
-    E informo novo username e password
-    Quando clico no botão signup
+    E informo username e password
+    Quando clico no botão signup ja existente
     Então valido mensagem de usuário já existente
 
-#CT (Positivo) Validar Compra com 3 produtos no carrinho
-#    Dado que acesso a URL do site
-#    Criar Limite de credito
-#    Criar SubLimite com atributo
-#    Executa Aprovar Imediatamente
-#    Realiza Majoração de Valores
-#    Validar Aprovar Alçada Comercial
-#    Validar Mensagem de Majoração de Valores Alçada 2
-#    Encerra sessão
+CT (Negativo) Validar autenticação sem dados de entrada
+    Dado que acesso a URL do site
+    Quando clico em signup
+    Quando clico no botão signup
+    Então valido autenticação sem dados de entrada
 
-#CT (Positivo) Validar Adição no carrinho de um celular, um monitor e um computador. Já dentro do carrinho, remova o monitor, atualize a página e confirme a remoção do item
-#    Acessar URL NSL
-#    Criar Limite de credito
-#    Criar SubLimite com atributo Project Finance marcado
-#    Valida se existe label atributo Project Finance na tela do sublimite
-#    Validar Solicitacao
-#    Validar Aprovacao Imediatamente
-#    Encerra sessão
+CT (Positivo) Validar Compra com 3 produtos no carrinho
+    Dado que acesso a URL do site
+    Quando clico em login
+    E informo o login e o password
+    Quando clico no botão login
+    Quando adiciono produtos no carrinho
+    Quando acesso o carrinho
+    Quando clico em place order
+    Quando informo os dados da encomenda
+    Então valido a mensagem de compra realizada com sucesso
+
+CT (Positivo) Validar Adição no carrinho de um celular, um monitor e um computador. Já dentro do carrinho, remova o monitor, atualize a página e confirme a remoção do item
+    Dado que acesso a URL do site
+    Quando clico em login
+    E informo o login e o password
+    Quando clico no botão login
+    Quando adiciono produtos diferentes no carrinho
+    Quando acesso o carrinho
+    Quando removo o monitor do carrinho
+    Quando atualizo a página
+    Então valido a remoçao do item
