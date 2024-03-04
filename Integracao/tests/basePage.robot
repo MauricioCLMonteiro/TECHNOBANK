@@ -166,21 +166,21 @@ Quando informo os dados da encomenda
 
 E informo username e password
     Press Keys  None  TAB
-    Input Text  ${IPT_USERNAME}   mau-monteiro_1989
+    Input Text  ${IPT_USERNAME}   mau-monteiro_1990
     Sleep   3s
     Input Text  ${IPT_SENHA}   Teste@1234
     Sleep   3s
 
 E informo o login e o password
     Press Keys  None  TAB
-    Input Text  ${IPT_LOGIN}   mau-monteiro_1989
+    Input Text  ${IPT_LOGIN}   mau-monteiro_1990
     Sleep   3s
     Input Text  ${IPT_PASSWORD}   Teste@1234
     Sleep   3s
 
 E informo novo username e password
     Press Keys  None  TAB
-    Input Text  ${IPT_USERNAME}   mau-monteiro_1989
+    Input Text  ${IPT_USERNAME}   mau-monteiro_1990
     Sleep   3s
     Input Text  ${IPT_SENHA}   Teste@1234
     Sleep   3s
