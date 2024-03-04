@@ -42,7 +42,6 @@ ${IPT_City}    //input[@id='city']
 ${IPT_Credit card}    //input[@id='card']
 ${IPT_Month}    //input[@id='month']
 ${IPT_Year}    //input[@id='year']
-
 *** Keywords ***
 Dado que acesso a URL do site
     Open Browser    ${url}      chrome
